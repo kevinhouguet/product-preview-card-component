@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Fraunces', serif;*/
+    font-family: 'Montserrat', sans-serif;
+    /*background-color: hsl(30, 38%, 92%); couleur du container*/
+    /*background-color: hsl(158, 36%, 37%); couleur du bouton*/
+    /*background-color: #f0f0f0;*/
+    /*background-color: hsl(212, 21%, 14%); couleur du titre*/
+    /*background-color: hsl(228, 12%, 48%); couleur du titre h2 ?*/
+}
+
+h1, .item-currentPrice {
+    font-family: 'Fraunces', serif;
+}
+
+#container {
+    background-color: hsl(30, 38%, 92%);
+    width: 90%;
+    height: 60vh;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0 0 0 / 20%);
+}
+
+#main-container {
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+#img {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 50%;
+}
+
+#content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 50%;
+}
+
+.item-cat {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.4rem;
+    font-size: 0.8em;
+}
+
+.item-title {
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.item-desc {
+    font-size: 14px;
+}
+
+.item-prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.5rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.item-currentPrice {
+    font-size: 2em;
+}
+
+.item-originPrice {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.add-to-cart {
+    all:unset;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.add-to-cart-text {
+    background-image: url("../images/icon-cart.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 0 auto;
+    bo
+}
