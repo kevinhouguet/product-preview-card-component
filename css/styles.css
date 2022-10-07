@@ -16,11 +16,19 @@ h1, .item-currentPrice {
     font-family: 'Fraunces', serif;
 }
 
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #container {
     background-color: hsl(30, 38%, 92%);
     width: 90%;
-    height: 60vh;
-    margin: 20vh auto;
+    padding: 10% 5%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,10 +39,8 @@ h1, .item-currentPrice {
 #main-container {
     background-color: white;
     display: flex;
-    border: 1px solid black;
     border-radius: 10px;
-    width: 50%;
-    height: 50%;
+    max-width: 600px;
 }
 
 #img {
@@ -52,6 +58,7 @@ h1, .item-currentPrice {
     justify-content: space-evenly;
     padding: 2rem;
     width: 50%;
+    row-gap: 1.7em
 }
 
 .item-cat {
@@ -63,7 +70,7 @@ h1, .item-currentPrice {
 
 .item-title {
     text-transform: capitalize;
-    font-size: 2em;
+    font-size: 2.1em;
 }
 
 .item-desc {
@@ -95,6 +102,11 @@ h1, .item-currentPrice {
     font-weight: 700;
     text-align: center;
     padding: 15px 0;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(158, 36%, 30%);
 }
 
 .add-to-cart-text {
@@ -103,5 +115,35 @@ h1, .item-currentPrice {
     background-repeat: no-repeat;
     width: 70%;
     margin: 0 auto;
-    bo
+    padding-left: 30px;
+}
+
+/*
+
+    Partie responsive
+
+*/
+
+@media screen and (max-width: 376px) {
+    #container {
+        width: 100%;
+        padding: 10% 5%;
+    }
+    #main-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #img {
+        height: 35vh;
+        border-radius: 10px 10px 0 0;
+        background-image: url("../images/image-product-mobile.jpg");
+        width: 100%;
+    }
+    #content-item {
+        width: 100%;
+        padding: 1.7rem;
+        row-gap: 0.9rem;
+    }
+
 }
