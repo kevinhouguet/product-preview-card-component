@@ -13,24 +13,23 @@
     <title>product-preview-card-component</title>
 </head>
 <body>
-    <div id="flex-container">
-        <div id="container">
-            <main id="main-container">
-                <section id="img"></section>
-                <section id="content-item">
-                    <h2 class="item-cat">perfume</h2>
-                    <h1 class="item-title">Gabrielle essence eau de parfum</h1>
-                    <p class="item-desc">A floral, solar and voluptuous interpretation composed by Olivier Polgen, Perfumer-Creator for the House of <strong>Chanel</strong>.</p>
-                    <div class="item-prices">
-                        <div class="item-currentPrice">$149.99</div>
-                        <div class="item-originPrice">$169.99</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <span class="add-to-cart-text">Add to Cart</span>
-                    </button>
-                </section>
-            </main>
-        </div>
-    </div>
+    <main id="main-container">
+        <picture id="image">
+            <source media="(max-width: 768px)" srcset="/product-preview-card-component/images/image-product-mobile.jpg" >
+            <img src="/product-preview-card-component/images/image-product-desktop.jpg" alt="image parfum" >
+        </picture>
+        <section id="content-item">
+            <h2 class="item-cat">perfume</h2>
+            <h1 class="item-title">Gabrielle essence eau de parfum</h1>
+            <p class="item-desc">A floral, solar and voluptuous interpretation composed by Olivier Polgen, Perfumer-Creator for the House of <strong>Chanel</strong>.</p>
+            <div class="item-prices">
+                <div class="item-currentPrice">$149.99</div>
+                <div class="item-originPrice">$169.99</div>
+            </div>
+            <button class="add-to-cart">
+                <span class="add-to-cart-text">Add to Cart</span>
+            </button>
+        </section>
+    </main>
 </body>
 </html>
